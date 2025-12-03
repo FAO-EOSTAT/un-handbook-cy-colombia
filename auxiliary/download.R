@@ -1,8 +1,8 @@
 options(timeout = 1200)
 
 # Step 1: Define the zip filename and output directory
-zip_file <- "ct_chile.zip"
-output_dir <- "data/ct_chile"
+zip_file <- "cy_colombia.zip"
+output_dir <- "data/"
 
 # Step 2: Create the data/ directory if it doesn't exist
 if (!dir.exists("data")) {
@@ -11,7 +11,7 @@ if (!dir.exists("data")) {
 
 # Step 3: Download the zip file
 download.file(
-  url      = "https://zenodo.org/api/records/17451690/files/ct_chile.zip/content",
+  url      = "https://zenodo.org/api/records/17451690/files/cy_colombia.zip/content",
   destfile = zip_file
 )
 
